@@ -1,0 +1,24 @@
+class,type,optional,name,showif,label,choice1,choice2,choice3,choice4,choice5,choice6,choice7,choice8,choice9,choice10,choice11,choice12,value
+,note,,Intro,,"Welcome,
+ 
+Thank you for taking the time to participate in the briefing session and for agreeing to participate in this research. 
+Your involvment makes this study possible and it is thanks to you and the other participants that we will be able to contribute to psychological science.
+
+#### Basic information
+First, please enter your phone number and email address.
+This information is necessary to automatically send you the questionnaires and any reminders.",,,,,,,,,,,,,
+,email,,email,,Please enter your email address.,,,,,,,,,,,,,
+,email,,email2,,Please enter your email address again.,,,,,,,,,,,,,
+,block,,match_error,"(email2 != """" && email != """" && email != email2) //js_only",Error : please verify your email address.,,,,,,,,,,,,,
+,tel,,telephone,,"Phone number
+ <span style=""color:red"">Format to be used : **0032411223344**</span>",,,,,,,,,,,,,
+,block,,erreur_tel,"(telephone != """" && (telephone.toString().length < 11 || telephone.toString().length > 11)) //js_only",Error : your phone number has the wrong format.,,,,,,,,,,,,,
+,"tel 13,13, 13",,tel2,,Please rewrite your mobile phone number.,,,,,,,,,,,,,
+,block,,match_error2,telephone != tel2 //js_only,Error: check your phone number.,,,,,,,,,,,,,
+,submit,,submit1,telephone == tel2 //js_only,Go to the next step,,,,,,,,,,,,,
+hidden,"random 1111,9999",,verification_code_sms,,,,,,,,,,,,,,,
+hidden,"random 1111,9999",,verification_code_mail,,,,,,,,,,,,,,,
+,note,,text,,Please verify your email and phone number below before we send you verification codes.,,,,,,,,,,,,,
+,email,,email_verif,,,,,,,,,,,,,,,email
+,tel,,gsm_verif,,,,,,,,,,,,,,,telephone
+,submit,,submit,,Go to the next step,,,,,,,,,,,,,

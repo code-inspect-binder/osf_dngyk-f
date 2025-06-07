@@ -1,0 +1,21 @@
+class,type,optional,name,showif,label,choice1,choice2,choice3,choice4,choice5,choice6,choice7,choice8,choice9,choice10,choice11,choice12,value
+,note,,Intro,,"Thank you for confirming your email and phone number.
+Please fill in the following information.",,,,,,,,,,,,,
+,mc,,sex,,Your gender,man,woman,non-binary,,,,,,,,,,
+,year,,birthyear,,Birth year,,,,,,,,,,,,,
+,text 8,,code_anonyme,,"In order to guarantee your anonymity, your answers will be associated with a code corresponding to the initials of your mother's first name and your father's first name followed by your date of birth in 6 numbers.
+
+E.g.: Marie's mother is called Nathalie, her father is called Thibault. Marie was born on June 16, 1986, the code will be NT160686 .   
+
+Enter the initials of your mother's first name and your father's first name followed by your date of birth in 6 digits  (day/month/year), all attached and without spaces as in the example.",,,,,,,,,,,,,
+,select_or_add_one,,mother_tongue,,"What is your native language?
+The one you use most often.",French,Dutch,German,Italian,Spanish,Russian,Polish,Portuguese,English,Ukranien,Romanian,Chinese,
+,select_or_add_multiple,,other_languages,,Quelles autres langues parlez-vous couramment?,French,Dutch,German,Italian,Spanish,Russian,Polish,Portuguese,English,Ukranien,Romanian,Chinese,
+,"number 0,32,1",,years_of_studies,,"How many years of formal education have you completed?
+Indicate the number of studies by counting from high school.
+Example: 6 years of high school + 3 years of bachelor/high school + 1 year of master = 10",,,,,,,,,,,,,
+,mc,,occupation,,What is your main occupation?,Employé,Self-employed,Student,Unemployed,PhD student,Other,,,,,,,
+,select_or_add_one,,country_living,,In which country do you currently live?,Belgium,France,Netherlands,Germany,Spain,Italy,England,Switzerland,Poland,,,,
+,note,,reread,,"
+**Make sure you have answered everything before submitting.**",,,,,,,,,,,,,
+,submit,,submit2,,Submit,,,,,,,,,,,,,

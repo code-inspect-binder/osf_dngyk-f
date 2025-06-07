@@ -1,0 +1,10 @@
+class,type,optional,name,showif,label,choice1,choice2,choice3,choice4,choice5,choice6,choice7,choice8,choice9,choice10,choice11,choice12,value
+,hidden,,verification_code_sms,,,,,,,,,,,,,,,enrolling_surveyEN$verification_code_sms
+,note,,note,,Please confirm your mobile number by entering the code found in the text message received.,,,,,,,,,,,,,
+,text,,verification_code_match_sms,,#### Enter the code received here,,,,,,,,,,,,,
+,block,,match_error,"verification_code_match_sms !="""" && verification_code_match_sms != verification_code_sms //js_only",The code you entered is not the right code.,,,,,,,,,,,,,
+,hidden,,verification_code,,,,,,,,,,,,,,,enrolling_surveyEN$verification_code_mail
+,note,,note2,,Please confirm your email address by entering the code found in the email you received.,,,,,,,,,,,,,
+,text,,verification_code_match,,#### Enter the code received here,,,,,,,,,,,,,
+,block,,match_error_2,"verification_code_match != """" && verification_code_match != verification_code //js_only",The code you entered is not the right code.,,,,,,,,,,,,,
+,submit,,mail_confirmation,verification_code_match == verification_code && verification_code_match_sms == verification_code_sms,I confirm my email and my mobile phone number,,,,,,,,,,,,,

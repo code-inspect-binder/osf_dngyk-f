@@ -1,0 +1,41 @@
+"","code","handedness","age","sex","studies","studied_psychology","esm_feedback","finished"
+"1","KJ131220","right-handed",20,"female","Licence ou équivalent, bachelier",TRUE,1,1
+"2","MT190201","right-handed",19,"female","Enseignement secondaire (deuxième cycle)",FALSE,0,1
+"3","CB131101","right-handed",19,"female","Enseignement secondaire (deuxième cycle)",FALSE,1,1
+"4","DF240797","right-handed",23,"female","Licence ou équivalent, bachelier",FALSE,0,1
+"5","FJ040798","right-handed",22,"male","Licence ou équivalent, bachelier",FALSE,1,1
+"6","NV070602","right-handed",18,"female","Enseignement secondaire (deuxième cycle)",FALSE,1,1
+"7","IC180602","right-handed",18,"female","Enseignement secondaire (deuxième cycle)",FALSE,1,1
+"8","SA050398","right-handed",22,"female","Licence ou équivalent, bachelier",TRUE,1,1
+"9","CB121002","right-handed",18,"female","Enseignement secondaire (deuxième cycle)",FALSE,1,1
+"10","CV300898","right-handed",22,"female","Licence ou équivalent, bachelier",FALSE,1,1
+"11","PA020496","right-handed",24,"female","Enseignement secondaire (deuxième cycle)",FALSE,1,1
+"12","VN120599","right-handed",21,"female","Master ou équivalent",FALSE,1,1
+"13","MP310199","right-handed",22,"female","Licence ou équivalent, bachelier",TRUE,0,1
+"14","NP170801","right-handed",19,"male","Enseignement secondaire (deuxième cycle)",TRUE,1,1
+"15","CL030297","right-handed",24,"female","Enseignement supérieur de cycle court (ex.: DEUG, BTS, DUT, DÉC technique)",FALSE,1,1
+"16","DB161096","right-handed",24,"male","Licence ou équivalent, bachelier",FALSE,1,1
+"17","PW040998","right-handed",22,"female","Master ou équivalent",TRUE,1,1
+"18","SR080398","right-handed",22,"female","Licence ou équivalent, bachelier",FALSE,1,1
+"19","NC210501","right-handed",19,"female","Licence ou équivalent, bachelier",FALSE,1,1
+"20","SH230995","right-handed",25,"female","Licence ou équivalent, bachelier",FALSE,1,1
+"21","CF040299","right-handed",22,"female","Licence ou équivalent, bachelier",FALSE,1,1
+"22","AH170596","right-handed",24,"male","Master ou équivalent",FALSE,1,1
+"23","CB300700","right-handed",20,"male","Enseignement secondaire (deuxième cycle)",FALSE,1,1
+"24","DS141297","right-handed",23,"female","Master ou équivalent",FALSE,1,1
+"25","BE180199","right-handed",22,"female","Licence ou équivalent, bachelier",FALSE,0,1
+"26","JR130598","right-handed",22,"female","Licence ou équivalent, bachelier",TRUE,1,1
+"27","EA071098","right-handed",22,"female","Licence ou équivalent, bachelier",FALSE,1,1
+"28","BS240201","right-handed",20,"female","Enseignement secondaire (deuxième cycle)",FALSE,1,1
+"29","LF280801","right-handed",19,"female","Enseignement secondaire (deuxième cycle)",TRUE,1,1
+"30","AR140100","right-handed",21,"female","Enseignement secondaire (deuxième cycle)",TRUE,1,1
+"31","VL091000","right-handed",20,"female","Licence ou équivalent, bachelier",FALSE,0,1
+"32","MM160500","right-handed",20,"male","Enseignement secondaire (premier cycle)",FALSE,1,1
+"33","SF131273","right-handed",20,"male","Licence ou équivalent, bachelier",FALSE,1,1
+"34","MJ020302","right-handed",19,"female","Enseignement post-secondaire non-supérieur",FALSE,1,1
+"35","PF040700","right-handed",20,"male","Licence ou équivalent, bachelier",FALSE,1,1
+"36","MD231197","right-handed",23,"female","Licence ou équivalent, bachelier",FALSE,1,1
+"37","FM281194","right-handed",26,"female","Licence ou équivalent, bachelier",FALSE,1,1
+"38","KE180100","right-handed",21,"female","Licence ou équivalent, bachelier",FALSE,1,1
+"39","NA110499","right-handed",22,"male","Licence ou équivalent, bachelier",FALSE,0,1
+"40","NB130302","right-handed",19,"female","Enseignement secondaire (deuxième cycle)",FALSE,1,1

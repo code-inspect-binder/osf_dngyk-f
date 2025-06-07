@@ -1,0 +1,70 @@
+class,type,optional,name,item_order,showif,label,choice1,choice2,choice3,choice4,choice5,choice6,choice7,choice8,choice9,choice10,choice11,choice12,value
+,note,,introduction,1,,"```{r, include=FALSE, warning = FALSE, message=FALSE, echo=FALSE}
+library(lubridate)
+library(hms)
+
+days_duration_study = 14
+surveys_by_day      = 4
+timezone            = ""CET""
+to_day              = today(timezone)
+now_date            = now(timezone)
+t_zero              = ""00:05""
+last_timepoint      = ""23:30""
+timepoints          = c(""09:00"",""13:00"",""17:00"",""21:00"")
+ESM_questionnaire   = EF_RUM_ESM_v2_EN
+
+t1 = force_tz(to_day + hm(timepoints[1]), tzone = timezone)
+t2 = force_tz(to_day + hm(timepoints[2]), tzone = timezone)
+t3 = force_tz(to_day + hm(timepoints[3]), tzone = timezone)
+t4 = force_tz(to_day + hm(timepoints[4]), tzone = timezone)
+
+time = """"
+
+if(now_date < t1) { 
+text_consigne = ""Since you woke up...""
+} else if(now_date < t2) { 
+text_consigne = ""Since you woke up...""
+} else if(now_date < t3) { 
+text_consigne = paste0(""Since the previous survey ("", timepoints[1], "")..."")
+} else if(now_date < t4) { 
+text_consigne = paste0(""Since the previous survey ("", timepoints[2], "")..."")
+} else if(now_date > t4) { 
+text_consigne = paste0(""Since the previous survey ("", timepoints[3], "")..."")
+} 
+
+Nday <- nrow(ESM_questionnaire)
+ if(Nday == 1){ text <- ""Here is your first daily questionnaire. \n There is no right or wrong answer. It is your experience and only your experience that interests us. As a reminder, your participation is completely anonymous."" } else {
+   text = ""\n \n""
+ }
+
+
+ ```
+
+### Hello`r knitr::asis_output(""\U1F44B"")` !
+`r text`
+
+`r knitr::asis_output(""\U23F3"")` Take a few moments for yourself to reflect on the hours that have passed and answer these questions.
+
+**`r text_consigne`**",,,,,,,,,,,,,
+,"range 0,100,1",,perseverance,3,,"<div class=""tooltip"">
+How much time did you spend thinking of one or more emotional experiences?
+<span class=""tooltiptext"">This question refers to how much time you spent lost in your thoughts, either thinking about emotions, problems, or something that happened to you, instead of being absorbed by the activity you were doing.</span>
+</div>",None ,All the time,,,,,,,,,,,
+,"range 0,100,1",,negativity,3,,"<div class=""tooltip"">
+To what extent were your thoughts negative? 
+<span class=""tooltiptext"">This refers to the content of your thoughts: for example if you’re thinking of a negative situation, negative events, bad memories, unpleasant sensations, discouraging thoughts, thoughts about negative emotions (intense stress, anxiety, anger), ...</span>
+</div>",Not at all,Extremely,,,,,,,,,,,
+,"range 0,100,1",,criticism,3,,"<div class=""tooltip"">
+To what extent were your thoughts self-critical?
+<span class=""tooltiptext"">This question refers to ‘self-critical’ thinking, meaning thoughts you have about yourself when: you’re dissatisfied with what you’re doing or how you’re reacting, you’re unhappy with who you are, or when you have goals in mind but you criticize yourself that you haven’t attained them yet... 
+In contrast, thoughts about yourself that are not ‘self-critical’: these are encouragements, self-compassion, positive thinking (for ex.: “I wasn’t able to do it now but I’ll get there at some point”).</span>
+</div>",Not at all,Extremely,,,,,,,,,,,
+,"range 0,100,1",,brooding,3,,"<div class=""tooltip"">
+How much did you think about the causes and consequences of emotional experiences? 
+<span class=""tooltiptext"">This refers to if you think of the causes or consequences of one or several emotional experiences (which could be positive or negative) that are either currently ongoing or in the past. A few examples: wondering what caused an argument with your partner; thinking about the consequences of a frustrating phone call; wondering why you have difficulty concentrating; trying to figure out why you feel bad or stressed; thinking about why you messed up a particular task; thinking about the causes and consequences of having failed an exam or a job interview; etc. </span>
+</div>",Not at all ,Absolutely,,,,,,,,,,,
+,"range 0,100,1",,replaying,3,,"<div class=""tooltip"">
+To what extend have you mentally replayed emotional experiences that you’ve had? 
+<span class=""tooltiptext"">This refers to whether you relived certain scenes from emotional experiences, or ‘replayed’ an event in your mind (regardless of whether it was a positive or negative experience).</span>
+</div>",Not at all ,Absolutely,,,,,,,,,,,
+,submit,,submit,4,replaying != 50 && brooding != 50 && criticism != 50 && negativity != 50 && perseverance != 50,"Submit `r knitr::asis_output(""\U2714"")` ",,,,,,,,,,,,,
